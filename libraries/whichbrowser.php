@@ -4140,7 +4140,7 @@
 					$this->browser->name = 'Mobile Internet Explorer';
 				}
 
-				if (preg_match('/MSIE ([0-9.]*)/u', $ua, $match)) {
+				if (preg_match('/MSIE\s?([0-9.]*)/u', $ua, $match)) {
 					$this->browser->version = new Version(array('value' => $match[1]));
 				}
 
